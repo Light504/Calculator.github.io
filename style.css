@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #6482AD;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Montserrat, Roboto;
+}
+
+.container{
+    background-color: #E2DAD6;
+    border-radius: 6px;
+    margin: 20svh auto;
+    width: fit-content;
+    height: fit-content;
+    border: solid;
+    padding: 11px;
+    transform: scale(1.5);
+}
+
+#display{
+    height: 30px;
+    width: 95%;
+    border-radius: 3px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.keypad{
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+}
+
+.keys{
+    height: 36px;
+    width: 40px;
+    font-size: 80%;
+    background-color: #F5EDED;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    font-family: Montserrat, Roboto;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.keys:hover{
+    border-color: rgb(141, 141, 141);
+    font-size: 90%;
+    background-color: #dbd7d7;
+    transform: scale(1.13);
+    box-shadow: 1.5px 2px 0.4px 0.4px;
+}
+
+.operation{
+    height: 36px;
+    width: 40px;
+    font-size: 80%;
+    background-color:#F5A623;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    font-family: Montserrat;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.operation:hover{
+    border-color: #c57b05;
+    font-size: 90%;
+    background-color: #f8b549;
+    transform: scale(1.14);
+    box-shadow: 1.5px 2px 0.4px 0.4px;
+}
+
+.clear{
+    height: 36px;
+    width: 40px;
+    font-size: 80%;
+    background-color:#C74C4C;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    font-family: Montserrat;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.clear:hover{
+    border-color: #940707;
+    font-size: 90%;
+    background-color: #bd5757;
+    transform: scale(1.13);
+    box-shadow: 1.5px 2px 0.4px 0.4px;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 20px;
+    height: 30px;
+}
+
+h4{
+    text-align: center;
+    font-family: Montserrat, Roboto;
+    font-weight: bold;
+}
+
+.cat{
+    position: absolute;
+    width: 125px;
+    bottom: 14.6%;
+    left: 51%;
+}
+
+.mountain{
+    position: absolute;
+    width: 1000px;
+    bottom: 0%;
+}

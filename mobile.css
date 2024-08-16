@@ -1,0 +1,199 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #6482AD;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Montserrat, Roboto;
+}
+
+.container {
+    background-color: #E2DAD6;
+    border-radius: 6px;
+    margin: 20svh auto;
+    width: fit-content;
+    height: fit-content;
+    border: solid;
+    padding: 11px;
+    transform: scale(1.5);
+}
+
+#display {
+    height: 30px;
+    width: 95%;
+    border-radius: 3px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.keypad {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+}
+
+.keys, .operation, .clear {
+    height: 36px;
+    width: 40px;
+    font-size: 80%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    font-family: Montserrat, Roboto;
+    font-weight: bold;
+}
+
+.keys {
+    background-color: #F5EDED;
+}
+
+.keys:hover {
+    border-color: rgb(141, 141, 141);
+    font-size: 90%;
+    background-color: #dbd7d7;
+    transform: scale(1.13);
+    box-shadow: 1.5px 2px 0.4px 0.4px;
+}
+
+.operation {
+    background-color: #F5A623;
+}
+
+.operation:hover {
+    border-color: #c57b05;
+    font-size: 90%;
+    background-color: #f8b549;
+    transform: scale(1.14);
+    box-shadow: 1.5px 2px 0.4px 0.4px;
+}
+
+.clear {
+    background-color: #C74C4C;
+}
+
+.clear:hover {
+    border-color: #940707;
+    font-size: 90%;
+    background-color: #bd5757;
+    transform: scale(1.13);
+    box-shadow: 1.5px 2px 0.4px 0.4px;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 20px;
+    height: 30px;
+}
+
+h4 {
+    text-align: center;
+    font-family: Montserrat, Roboto;
+    font-weight: bold;
+}
+
+/* .cat position */
+.cat {
+    position: fixed; /* Change to fixed for consistent positioning relative to the viewport */
+    width: 125px;
+    bottom: 10%; /* Adjusted to be relative to the viewport height */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+/* .mountain position */
+.mountain {
+    position: absolute;
+    width: 1000px;
+    bottom: 0%;
+}
+
+/* Media Queries */
+
+/* Tablet Styles (for screens 768px and wider) */
+@media (min-width: 768px) {
+    .container {
+        margin: 30px auto;
+        transform: scale(1.2);
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    #display {
+        height: 40px;
+        width: 100%;
+    }
+
+    .keys, .operation, .clear {
+        height: 48px;
+        width: 48px;
+        font-size: 90%;
+    }
+
+    .cat{
+        position: absolute;
+        bottom: 20%;
+    }
+}
+
+/* Desktop Styles (for screens 1024px and wider) */
+@media (min-width: 1024px) {
+    .container {
+        margin: 40px auto;
+        transform: scale(1);
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #display {
+        height: 50px;
+        width: 100%;
+    }
+
+    .keys, .operation, .clear {
+        height: 60px;
+        width: 60px;
+        font-size: 100%;
+    }
+}
+
+/* Large Desktop Styles (for screens 1440px and wider) */
+@media (min-width: 1440px) {
+    .container {
+        margin: 50px auto;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #display {
+        height: 60px;
+        width: 100%;
+    }
+
+    .keys, .operation, .clear {
+        height: 72px;
+        width: 72px;
+        font-size: 110%;
+    }
+}
